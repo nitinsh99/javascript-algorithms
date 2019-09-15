@@ -1,4 +1,4 @@
-import LinkedList from '../LinkedList';
+import LinkedList from '../MyImpl/LinkedList';
 
 describe('LinkedList', () => {
   it('should create empty linked list', () => {
@@ -146,7 +146,9 @@ describe('LinkedList', () => {
       .append(nodeValue1)
       .prepend(nodeValue2);
 
-    const nodeStringifier = value => `${value.key}:${value.value}`;
+    const nodeStringifier = (value) => {
+      return `${value.key}:${value.value}`;
+    };
 
     expect(linkedList.toString(nodeStringifier)).toBe('key2:2,key1:1');
   });

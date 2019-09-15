@@ -1,4 +1,4 @@
-import LinkedListNode from '../LinkedListNode';
+import LinkedListNode from '../MyImpl/LinkedListNode';
 
 describe('LinkedListNode', () => {
   it('should create list node with value', () => {
